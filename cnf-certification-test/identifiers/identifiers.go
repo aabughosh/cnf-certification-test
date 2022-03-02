@@ -130,6 +130,21 @@ var (
 		Url:     formTestURL(common.NetworkingTestKey, "icmpv4-connectivity"),
 		Version: versionOne,
 	}
+	// TestICMPv6ConnectivityIdentifier tests icmpv6 connectivity.
+	TestICMPv6ConnectivityIdentifier = claim.Identifier{
+		Url:     formTestURL(common.NetworkingTestKey, "icmpv6-connectivity"),
+		Version: versionOne,
+	}
+	// TestICMPv4ConnectivityIdentifier tests icmpv4 Multus connectivity.
+	TestICMPv4ConnectivityMultusIdentifier = claim.Identifier{
+		Url:     formTestURL(common.NetworkingTestKey, "icmpv4-connectivity-multus"),
+		Version: versionOne,
+	}
+	// TestICMPv6ConnectivityIdentifier tests icmpv6 Multus connectivity.
+	TestICMPv6ConnectivityMultusIdentifier = claim.Identifier{
+		Url:     formTestURL(common.NetworkingTestKey, "icmpv6-connectivity-multus"),
+		Version: versionOne,
+	}
 	// TestNamespaceBestPracticesIdentifier ensures the namespace has followed best namespace practices.
 	TestNamespaceBestPracticesIdentifier = claim.Identifier{
 		Url:     formTestURL(common.AccessControlTestKey, "namespace"),
@@ -148,6 +163,11 @@ var (
 	// TestOperatorInstallStatusSucceededIdentifier tests Operator best practices.
 	TestOperatorInstallStatusSucceededIdentifier = claim.Identifier{
 		Url:     formTestURL(common.OperatorTestKey, "install-status-succeeded"),
+		Version: versionOne,
+	}
+	// TestOperatorNoPrivileges tests Operator has no privileges on resources.
+	TestOperatorNoPrivileges = claim.Identifier{
+		Url:     formTestURL(common.OperatorTestKey, "install-status-no-privileges"),
 		Version: versionOne,
 	}
 	// TestOperatorIsCertifiedIdentifier tests that an Operator has passed Operator certification.
@@ -403,15 +423,49 @@ they are the same.`),
 	TestICMPv4ConnectivityIdentifier: {
 		Identifier: TestICMPv4ConnectivityIdentifier,
 		Type:       normativeResult,
-		Remediation: `Ensure that the CNF is able to communicate via the Default OpenShift network.  In some rare cases,
-CNFs may require routing table changes in order to communicate over the Default network.  In other cases, if the
-Container base image does not provide the "ip" or "ping" binaries, this test may not be applicable.  For instructions on
-how to exclude a particular container from ICMPv4 connectivity tests, consult:
-[README.md](https://github.com/test-network-function/test-network-function#issue-161-some-containers-under-test-do-not-contain-ping-or-ip-binary-utilities).`,
+		Remediation: `Ensure that the CNF is able to communicate via the Default OpenShift network. In some rare cases,
+CNFs may require routing table changes in order to communicate over the Default network. To exclude a particular pod
+from ICMPv4 connectivity tests, add the test-network-function.com/skip_connectivity_tests label to it. The label value is not important, only its presence.`,
 		Description: formDescription(TestICMPv4ConnectivityIdentifier,
 			`checks that each CNF Container is able to communicate via ICMPv4 on the Default OpenShift network.  This
-test case requires the Deployment of the debug daemonset.
-`),
+test case requires the Deployment of the debug daemonset.`),
+		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2",
+	},
+
+	TestICMPv6ConnectivityIdentifier: {
+		Identifier: TestICMPv6ConnectivityIdentifier,
+		Type:       normativeResult,
+		Remediation: `Ensure that the CNF is able to communicate via the Default OpenShift network. In some rare cases,
+CNFs may require routing table changes in order to communicate over the Default network. To exclude a particular pod
+from ICMPv6 connectivity tests, add the test-network-function.com/skip_connectivity_tests label to it. The label value is not important, only its presence.`,
+		Description: formDescription(TestICMPv6ConnectivityIdentifier,
+			`checks that each CNF Container is able to communicate via ICMPv6 on the Default OpenShift network.  This
+test case requires the Deployment of the debug daemonset.`),
+		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2",
+	},
+
+	TestICMPv4ConnectivityMultusIdentifier: {
+		Identifier: TestICMPv4ConnectivityMultusIdentifier,
+		Type:       normativeResult,
+		Remediation: `Ensure that the CNF is able to communicate via the Multus network(s). In some rare cases,
+CNFs may require routing table changes in order to communicate over the Multus network(s). To exclude a particular pod
+from ICMPv4 connectivity tests, add the test-network-function.com/skip_connectivity_tests label to it. The label value is not important, only its presence.`,
+		Description: formDescription(TestICMPv4ConnectivityMultusIdentifier,
+			`checks that each CNF Container is able to communicate via ICMPv4 on the Multus network(s).  This
+test case requires the Deployment of the debug daemonset.`),
+		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2",
+	},
+
+	TestICMPv6ConnectivityMultusIdentifier: {
+		Identifier: TestICMPv6ConnectivityMultusIdentifier,
+		Type:       normativeResult,
+		Remediation: `Ensure that the CNF is able to communicate via the Multus network(s). In some rare cases,
+CNFs may require routing table changes in order to communicate over the Multus network(s). To exclude a particular pod
+from ICMPv6 connectivity tests, add the test-network-function.com/skip_connectivity_tests label to it.The label value is not important, only its presence.
+`,
+		Description: formDescription(TestICMPv6ConnectivityMultusIdentifier,
+			`checks that each CNF Container is able to communicate via ICMPv6 on the Multus network(s).  This
+test case requires the Deployment of the debug daemonset.`),
 		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2",
 	},
 
@@ -459,6 +513,16 @@ the same hacks.'`),
 		Remediation: `Make sure all the CNF operators have been successfully installed by OLM.`,
 		Description: formDescription(TestOperatorInstallStatusSucceededIdentifier,
 			`Ensures that the target CNF operators report "Succeeded" as their installation status.`),
+		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2.12 and Section 6.3.3",
+	},
+
+	TestOperatorNoPrivileges: {
+		Identifier:  TestOperatorNoPrivileges,
+		Type:        normativeResult,
+		Remediation: `Make sure all the CNF operators have no privileges on cluster resources.`,
+		Description: formDescription(TestOperatorNoPrivileges,
+			`The operator is not installed with privileged rights. Test passes if clusterPermissions is not present in the CSV manifest or is present 
+with no resourceNames under its rules.`),
 		BestPracticeReference: bestPracticeDocV1dot2URL + " Section 6.2.12 and Section 6.3.3",
 	},
 

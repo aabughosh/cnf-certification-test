@@ -14,4 +14,23 @@
 // with this program; if not, write to the Free Software Foundation, Inc.,
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-package ocpclient_test
+package loghelper
+
+import (
+	"fmt"
+
+	"github.com/sirupsen/logrus"
+)
+
+// CuratedLogLines
+type CuratedLogLines struct {
+	lines []string
+}
+
+// AddLogLine checks a slice for a given string.
+func (list CuratedLogLines) AddLogLine(format string, args ...interface{}) CuratedLogLines {
+	message := fmt.Sprintf(format+"\n", args...)
+	list.lines = append(list.lines, message)
+	logrus.Debug(message)
+	return list
+}
