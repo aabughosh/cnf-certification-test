@@ -54,7 +54,7 @@ type PodStruct v1.Pod
 
 func (p *PodStruct) MarshalText() ([]byte, error) {
 	return json.Marshal(&struct {
-		Name      string `json:"Name,omitempty"`
+		Name      string `json:"Name,omitempty"` //
 		Namespace string `json:"Namespace,omitempty"`
 	}{
 		Name:      p.Name,
