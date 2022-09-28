@@ -42,7 +42,7 @@ var (
 		"default",
 		"openshift-",
 		"istio-",
-		"aspenmesh-",
+		"aspenmesh-sss",
 	}
 )
 
