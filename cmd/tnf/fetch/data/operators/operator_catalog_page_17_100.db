@@ -1,432 +1,6 @@
 {
   "data": [
     {
-      "_id": "619b0f572617fe8f092a7208",
-      "alm_examples": [
-        {
-          "api_version": "tools.opdev.io/v1",
-          "kind": "DemoResource",
-          "metadata": {
-            "name": "demoresource-sample"
-          },
-          "spec": {
-            "message": "Hello, World!"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/jinhli-2021-update/jinhli-preflight-test@sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "bundle_path_digest": "sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-22T03:32:39.955000+00:00",
-      "csv_description": "A simple demo operator with a minimal reconciliation function, for testing basic operator installation and validation workflows.",
-      "csv_display_name": "Simple Demo Operator",
-      "csv_metadata_description": "",
-      "csv_name": "jinhli-operator.v0.0.3",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": false,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:29.741000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.9",
-      "organization": "certified-operators",
-      "package": "jinhli-demo-operator",
-      "provided_apis": [
-        {
-          "group": "tools.opdev.io",
-          "kind": "DemoResource",
-          "plural": "demoresources",
-          "version": "v1"
-        }
-      ],
-      "provider": "The Partner Lifecycle Engineering Team",
-      "related_images": [
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "image": "quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "name": "manager"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.9",
-      "version": "0.0.3",
-      "version_original": "0.0.3"
-    },
-    {
-      "_id": "619b1dd72617fe8f092a7209",
-      "alm_examples": [
-        {
-          "api_version": "tools.opdev.io/v1",
-          "kind": "DemoResource",
-          "metadata": {
-            "name": "demoresource-sample"
-          },
-          "spec": {
-            "message": "Hello, World!"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/jinhli-2021-update/jinhli-preflight-test@sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "bundle_path_digest": "sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-22T04:34:31.736000+00:00",
-      "csv_description": "A simple demo operator with a minimal reconciliation function, for testing basic operator installation and validation workflows.",
-      "csv_display_name": "Simple Demo Operator",
-      "csv_metadata_description": "",
-      "csv_name": "jinhli-operator.v0.0.3",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": false,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:08:45.254000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "jinhli-demo-operator",
-      "provided_apis": [
-        {
-          "group": "tools.opdev.io",
-          "kind": "DemoResource",
-          "version": "v1"
-        }
-      ],
-      "provider": "The Partner Lifecycle Engineering Team",
-      "related_images": [
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "image": "quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "name": "manager"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.0.3",
-      "version_original": "0.0.3"
-    },
-    {
-      "_id": "619b4f6114180ede86fe6ee8",
-      "alm_examples": [
-        {
-          "api_version": "sources.triggermesh.com/v1alpha1",
-          "kind": "AwsEventSources",
-          "metadata": {
-            "name": "awseventsources-sample"
-          },
-          "spec": {
-            "adapters": {
-              "awscloudwatch": {
-                "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c"
-              },
-              "awscloudwatchlogs": {
-                "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179"
-              },
-              "awscodecommit": {
-                "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb"
-              },
-              "awscognitoidentity": {
-                "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf"
-              },
-              "awscognitouserpool": {
-                "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4"
-              },
-              "awsdynamodb": {
-                "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700"
-              },
-              "awskinesis": {
-                "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f"
-              },
-              "awsperformanceinsights": {
-                "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931"
-              },
-              "awssns": {
-                "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6"
-              },
-              "awssqs": {
-                "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153"
-              }
-            },
-            "affinity": {},
-            "fullnameOverride": "",
-            "image": {
-              "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-              "pullPolicy": "IfNotPresent"
-            },
-            "imagePullSecrets": [],
-            "nameOverride": "",
-            "nodeSelector": {},
-            "podAnnotations": {},
-            "podSecurityContext": {},
-            "rbac": {
-              "create": true
-            },
-            "resources": {
-              "requests": {
-                "cpu": "20m",
-                "memory": "20Mi"
-              }
-            },
-            "securityContext": {},
-            "serviceAccount": {
-              "annotations": {},
-              "create": true,
-              "name": ""
-            },
-            "tolerations": []
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator-bundle@sha256:2d8c64b21eb17b985ae3aff6ddb62966cad14720f34a0ff685899dfb370e07de",
-      "bundle_path_digest": "sha256:2d8c64b21eb17b985ae3aff6ddb62966cad14720f34a0ff685899dfb370e07de",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "beta",
-      "creation_date": "2021-11-22T08:05:53.610000+00:00",
-      "csv_description": "The TriggerMesh AWS Sources operator provides a collection of API's that enables to consume events that happen in your AWS services and send them to containers, microservices and functions running in your cluster.\n\n## Prerequisites\n\nThe TriggerMesh AWS Sources operator depends on the Knative API's provided by the Red Hat OpenShift Serverless operator. For more information, see the documentation on [Installing OpenShift Serverless](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/serverless_applications/installing-openshift-serverless-1).\n\n## Supported Event Sources\n\n- **AWS CodeCommit event source**: Consume messages from a AWS CodeCommit repository and send them as CloudEvents to an arbitrary event sink.\n- **AWS Cognito Identity event source**: Consume messages from a AWS Cognito identity pool and send them as CloudEvents to an arbitrary event sink.\n- **AWS Cognito UserPool event source**: Consume messages from a AWS Cognito identity pool and send them as CloudEvents to an arbitrary event sink.\n- **AWS DynamoDB event source**: Consume messages from a AWS DynamoDB stream and send them as CloudEvents to an arbitrary event sink.\n- **AWS Kinesis event source**: Consume messages from a AWS Kinesis data stream and send them as CloudEvents to an arbitrary event sink.\n- **AWS SNS event source**: Subscribes to messages from a AWS SNS topic and send them as CloudEvents to an arbitrary event sink.\n- **AWS SQS event source**: Consume messages from a AWS SQS queue and sends them as CloudEvents to an arbitrary event sink.\n\n## Installation\n\nSee the documentation on [Installing TriggerMesh AWS Sources](https://github.com/triggermesh/aws-sources-operator/blob/master/README.md)\n\n## Getting Started\n\nSee the documentation on [Getting Started](https://github.com/triggermesh/aws-event-sources/blob/master/README.md)\n",
-      "csv_display_name": "AWS Sources Operator",
-      "csv_metadata_description": "Provides a collection of API's that enables to consume events that happen in your AWS services and send them to containers, microservices and functions running in your cluster.",
-      "csv_name": "aws-sources-operator.v0.4.0",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:52:05.204000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "aws-event-sources-operator-certified",
-      "provided_apis": [
-        {
-          "group": "sources.triggermesh.com",
-          "kind": "AwsEventSources",
-          "plural": "awseventsources",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "TriggerMesh Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "aws-sources-operator"
-        },
-        {
-          "digest": "sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "name": "controller"
-        },
-        {
-          "digest": "sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "name": "awscodecommit-cloudwatchlogs-adapter"
-        },
-        {
-          "digest": "sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "name": "awscodecommit-cloudwatch-adapter"
-        },
-        {
-          "digest": "sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "name": "awscodecommit-adapter"
-        },
-        {
-          "digest": "sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "name": "awscognitoidentity-adapter"
-        },
-        {
-          "digest": "sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "name": "awscognitouserpool-adapter"
-        },
-        {
-          "digest": "sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "name": "awsdynamodb-adapter"
-        },
-        {
-          "digest": "sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "name": "awskinesis-adapter"
-        },
-        {
-          "digest": "sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "name": "awskinesis-performanceinsights-adapter"
-        },
-        {
-          "digest": "sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "name": "awssns-adapter"
-        },
-        {
-          "digest": "sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "name": "awssqs-adapter"
-        },
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "aws-event-sources-operator-d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f-annotation"
-        },
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "name": "aws-event-sources-controller-a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3-annotation"
-        },
-        {
-          "digest": "sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "name": "awssqssource-34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153-annotation"
-        },
-        {
-          "digest": "sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "name": "awssnssource-e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6-annotation"
-        },
-        {
-          "digest": "sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "name": "awsperformanceinsightssource-a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931-annotation"
-        },
-        {
-          "digest": "sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "name": "awskinesissource-8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f-annotation"
-        },
-        {
-          "digest": "sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "name": "awsdynamodbsource-168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700-annotation"
-        },
-        {
-          "digest": "sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "name": "awscognitouserpoolsource-09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4-annotation"
-        },
-        {
-          "digest": "sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "name": "awscognitoidentitysource-8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf-annotation"
-        },
-        {
-          "digest": "sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "name": "awscodecommitsource-d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb-annotation"
-        },
-        {
-          "digest": "sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "name": "awscloudwatchlogssource-962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179-annotation"
-        },
-        {
-          "digest": "sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "name": "awscloudwatchsource-847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.4.0",
-      "version_original": "0.4.0"
-    },
-    {
       "_id": "619b4f7414180ede86fe6ee9",
       "alm_examples": [],
       "annotations": {
@@ -10942,503 +10516,6 @@
       "version_original": "1.0.1"
     },
     {
-      "_id": "61a57b153e9240fca360f54d",
-      "alm_examples": [
-        {
-          "api_version": "anzo.cambridgesemantics.com/v1",
-          "kind": "Anzo",
-          "metadata": {
-            "name": "agent01"
-          },
-          "spec": {
-            "nodeConfig": {
-              "spec": {
-                "replicas": 1,
-                "selector": {
-                  "matchLabels": {
-                    "app": "anzo"
-                  }
-                },
-                "serviceName": "anzo-agent01",
-                "template": {
-                  "metadata": {
-                    "labels": {
-                      "app": "anzo"
-                    }
-                  },
-                  "spec": {
-                    "containers": [
-                      {
-                        "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-                        "name": "anzo",
-                        "resources": {
-                          "limits": {
-                            "cpu": "4000m",
-                            "memory": "12Gi"
-                          },
-                          "requests": {
-                            "cpu": "4000m",
-                            "memory": "12Gi"
-                          }
-                        }
-                      }
-                    ],
-                    "serviceAccountName": "anzo-operator"
-                  }
-                }
-              }
-            },
-            "role": "AnzoAgent"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzo-operator-bundle@sha256:28703523a1c160570fc23fb1236d2a02108b97e4423d42b0d3cde98c94d351cb",
-      "bundle_path_digest": "sha256:28703523a1c160570fc23fb1236d2a02108b97e4423d42b0d3cde98c94d351cb",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:01.229000+00:00",
-      "csv_description": "The Anzo Operator provides the way to install and configure an anzo agent setup on Red Hat K8S environment.\nCurrently, this is supported only through when deployed as an Anzo Agent as part of an Anzo Unstructured deployment.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzo/blob/v2.0.0/README.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzo/userdoc/cloud-deployments.htm )\n\n### Support\n\nWe offer Support to our customers through [ Cambridge Semantics Customer Center ]( https://customercenter.cambridgesemantics.com/ ).",
-      "csv_display_name": "Anzo Operator",
-      "csv_metadata_description": "kubernetes operator for Anzo",
-      "csv_name": "anzo-operator.v2.0.101",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:16.137000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzo-operator",
-      "provided_apis": [
-        {
-          "group": "anzo.cambridgesemantics.com",
-          "kind": "Anzo",
-          "plural": "anzos",
-          "version": "v1"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-operator@sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "name": "anzo-operator-563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0-annotation"
-        },
-        {
-          "digest": "sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-operator@sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "name": "anzo"
-        },
-        {
-          "digest": "sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "name": "anzo-d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.0",
-      "version_original": "2.0.0"
-    },
-    {
-      "_id": "61a57b1ebfd4a5234d5960cd",
-      "alm_examples": [
-        {
-          "api_version": "anzograph.clusters.cambridgesemantics.com/v2",
-          "kind": "AnzoGraph",
-          "metadata": {
-            "name": "azg01"
-          },
-          "spec": {
-            "db": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app_data": "anzograph-data-grpc",
-                      "app_mgmt": "anzograph-mgmt-grpc"
-                    }
-                  },
-                  "serviceName": "anzograph-azg01",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app_data": "anzograph-data-grpc",
-                        "app_mgmt": "anzograph-mgmt-grpc"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-                          "name": "db",
-                          "resources": {
-                            "limits": {
-                              "cpu": "8000m",
-                              "memory": "8Gi"
-                            },
-                            "requests": {
-                              "cpu": "8000m",
-                              "memory": "8Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "anzograph-operator"
-                    }
-                  }
-                }
-              }
-            },
-            "deployFrontend": false,
-            "frontend": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app_mgmt": "anzograph-frontend"
-                    }
-                  },
-                  "serviceName": "anzograph-azg01",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app_mgmt": "anzograph-frontend"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-                          "name": "frontend",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2000m",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2000m",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "anzograph-operator"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator-bundle@sha256:9418a3505873ac387f2b5455ec7e696739a2bb6f03232f8c0f59489c605b96f2",
-      "bundle_path_digest": "sha256:9418a3505873ac387f2b5455ec7e696739a2bb6f03232f8c0f59489c605b96f2",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:10.124000+00:00",
-      "csv_description": "The AnzoGraph Operator provides the way to install and configure an AnzoGraph\ncluster on Red Hat K8S environment.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzograph/blob/v2.0.1/README_openshift_marketplace.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzograph/userdoc/ )\n\n### Support\n\nWe offer Support to our customers with the AnzoGraph db Enterprise Edition License [here]( https://customercenter.cambridgesemantics.com/ ). For AnzoGraph db Free Edition questions, get help from our Anzograph User Community at Stack Overflow. When submitting a question, include the tag 'anzograph'.",
-      "csv_display_name": "AnzoGraph Operator",
-      "csv_metadata_description": "kubernetes operator for AnzoGraph DB",
-      "csv_name": "anzograph-operator.v2.0.102",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:22.697000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzograph-operator",
-      "provided_apis": [
-        {
-          "group": "anzograph.clusters.cambridgesemantics.com",
-          "kind": "AnzoGraph",
-          "version": "v2"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator@sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "name": "anzograph-operator-a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732-annotation"
-        },
-        {
-          "digest": "sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator@sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:e3bdddf811b5ba69f388d023aea1ba538edd00e9f415c33ec555321d39129a36",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph@sha256:e3bdddf811b5ba69f388d023aea1ba538edd00e9f415c33ec555321d39129a36",
-          "name": "anzograph_allinone"
-        },
-        {
-          "digest": "sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "name": "anzograph_db"
-        },
-        {
-          "digest": "sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "name": "anzograph_frontend"
-        },
-        {
-          "digest": "sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "name": "anzograph-frontend-c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3-annotation"
-        },
-        {
-          "digest": "sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "name": "anzograph-db-8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.1",
-      "version_original": "2.0.1"
-    },
-    {
-      "_id": "61a57b26c17162a20c1c687f",
-      "alm_examples": [
-        {
-          "api_version": "anzounstructured.clusters.cambridgesemantics.com/v1",
-          "kind": "AnzoUnstructured",
-          "metadata": {
-            "name": "au01"
-          },
-          "spec": {
-            "auWorker": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app": "anzounstructured"
-                    }
-                  },
-                  "serviceName": "au-au01-w",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app": "anzounstructured"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-                          "name": "w",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "unstructured-operator"
-                    }
-                  }
-                }
-              }
-            },
-            "msLeader": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app": "anzounstructured"
-                    }
-                  },
-                  "serviceName": "au-au01-ms",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app": "anzounstructured"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-                          "name": "ms",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "unstructured-operator"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-operator-bundle@sha256:800c686058a8b80d2c082741019db9d35535b2ba2b59007cbde0c2dffa143e82",
-      "bundle_path_digest": "sha256:800c686058a8b80d2c082741019db9d35535b2ba2b59007cbde0c2dffa143e82",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:18.637000+00:00",
-      "csv_description": "The Anzo Unstructured Operator provides the way to install and configure an anzo unstructured setup on Red Hat K8S environment.\nCurrently, this is possible only through existing Anzo installation.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzo-unstructured/blob/v2.0.0/README.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzo/userdoc/cloud-deployments.htm )\n\n### Support\n\nWe offer Support to our customers through [ Cambridge Semantics Customer Center ]( https://customercenter.cambridgesemantics.com/ ).",
-      "csv_display_name": "Anzo Unstructured Operator",
-      "csv_metadata_description": "Kubernetes Operator for Anzo Unstructured",
-      "csv_name": "anzounstructured-operator.v2.0.101",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:27.028000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzounstructured-operator",
-      "provided_apis": [
-        {
-          "group": "anzounstructured.clusters.cambridgesemantics.com",
-          "kind": "AnzoUnstructured",
-          "plural": "anzounstructureds",
-          "version": "v1"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "image": "registry.connect.redhat.com/cambridgesemantics/unstructured-operator@sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "name": "unstructured-operator-a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04-annotation"
-        },
-        {
-          "digest": "sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "image": "registry.connect.redhat.com/cambridgesemantics/unstructured-operator@sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "name": "anzo_microservices_leader"
-        },
-        {
-          "digest": "sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "name": "anzo_unstructured_worker"
-        },
-        {
-          "digest": "sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "name": "anzo-microservices-leader-0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286-annotation"
-        },
-        {
-          "digest": "sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "name": "anzo-unstructured-worker-4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.0",
-      "version_original": "2.0.0"
-    },
-    {
       "_id": "61a57b36bfd4a5234d5960ce",
       "alm_examples": [
         {
@@ -14147,6 +13224,557 @@
       "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
       "version": "0.10.1-rc4",
       "version_original": "0.10.1-rc4"
+    },
+    {
+      "_id": "61a57ca427e166330707d966",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:b0e763b8e865c832348cc4a883a99af0be4b657f0b44b4419ca4d6066a3c7bed",
+      "bundle_path_digest": "sha256:b0e763b8e865c832348cc4a883a99af0be4b657f0b44b4419ca4d6066a3c7bed",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:40.640000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.20",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:12:02.535000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:dffc105b4cf03f0b4f15c90786505ba5d660bf703bf11e19e80c90d93fece559",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:dffc105b4cf03f0b4f15c90786505ba5d660bf703bf11e19e80c90d93fece559",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.20",
+      "version_original": "0.0.20"
+    },
+    {
+      "_id": "61a57cae3e9240fca360f55a",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:58e3af46a8b343a8a899cea5c01061f9fb3530713d7786cca289b198d72bacf6",
+      "bundle_path_digest": "sha256:58e3af46a8b343a8a899cea5c01061f9fb3530713d7786cca289b198d72bacf6",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:50.428000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.21",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:12:08.289000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:326789849a178bdea0e57f1b4649a4e92a2590579902e899932c733bc24409d3",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:326789849a178bdea0e57f1b4649a4e92a2590579902e899932c733bc24409d3",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.21",
+      "version_original": "0.0.21"
+    },
+    {
+      "_id": "61a57cb7c17162a20c1c688c",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:d778e1d70bee8e4a17cac2ea9b04c82c747fd1d1f3859e846626f581f58f1ae3",
+      "bundle_path_digest": "sha256:d778e1d70bee8e4a17cac2ea9b04c82c747fd1d1f3859e846626f581f58f1ae3",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:59.698000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.22",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:12:12.948000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:f839152251e021fe0ae1d4bd9e5374c2a2fb3c01da4381ba4c01afcbaadbf8bd",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:f839152251e021fe0ae1d4bd9e5374c2a2fb3c01da4381ba4c01afcbaadbf8bd",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.22",
+      "version_original": "0.0.22"
+    },
+    {
+      "_id": "61a57ce1c17162a20c1c688f",
+      "alm_examples": [
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqCluster",
+          "metadata": {
+            "name": "kubemq-cluster"
+          },
+          "spec": {
+            "replicas": 3
+          }
+        },
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqDashboard",
+          "metadata": {
+            "name": "kubemq-dashboard"
+          },
+          "spec": {}
+        },
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqConnector",
+          "metadata": {
+            "name": "kubemq-bridges"
+          },
+          "spec": {
+            "config": "bindings: null",
+            "type": "bridges"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/kubemq/kubemq-operator-bundle@sha256:9009198860c7a1e0de4f429261d442b75b5b2893a943bb77914b14d643db8829",
+      "bundle_path_digest": "sha256:9009198860c7a1e0de4f429261d442b75b5b2893a943bb77914b14d643db8829",
+      "capabilities": [
+        "Auto Pilot"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:22:41.997000+00:00",
+      "csv_description": "\n## Kubernetes Messaging Platform\nA message-based architecture for microservices providing flexible connectivity for hybrid environments: multi-cloud, on-premises, and at the edge. Powered by enterprise-grade message broker and message queue with ready to use connectors, bridges, and control center.\n\nMessaging platform components:\n  - **KubeMQ Cluster** - Enterprise-grade message broker and message queue, scalable, high available, and secured.\n  - **KubeMQ Targets Connector** - connects a KubeMQ cluster with external systems and cloud services.\n  - **KubeMQ Bridges Connector** - bridge, replicate, aggregate, and transform messages between KubeMQ clusters.\n  - **KubeMQ Sources Connector** - transform external systems and cloud services data to KubeMQ cluster messages.\n  - **KubeMQ Dashboard** - monitor KubeMQ cluster metrics.\n\n### Kubernetes Native\nInnovative and modern message queue and message broker in a lightweight container developed to run in Kubernetes, certified in the CNCF landscape, and connect natively to the cloud-native ecosystem.\n\n### Ease of use\n\nSimple deployment in Kubernetes in less than 1 minute. Developer friendly by simple to use SDKs and elimination of the many developers and DevOps-centered challenges to define exchanges, brokers, channels, routes, and predefined topics\n\n### All messaging patterns\n\nKubeMQ is available with all messaging patterns such as Queue, Stream, Pub/Sub, and RPC, Saving the need to maintain multiple messaging platforms for different use cases.\n\n### Hybrid Environments\n\nKubeMQ enables the microservices from multiple environments to communicate and build one hybrid infrastructure solution across clouds, on-prem, and at the edge.\n\n### KubeMQ Cluster key features\n\n- All-batteries included Messaging Queue Broker for the Kubernetes environment\n- Deployed with Operator for full life cycle operation\n- Blazing fast (written in Go), small and lightweight Docker container\n- Asynchronous and Synchronous messaging with support for  `At Most Once Delivery` and `At Least Once Delivery` models\n- Supports durable FIFO based Queue, Publish-Subscribe Events, Publish-Subscribe with Persistence (Events Store), RPC Command and Query messaging patterns\n- Supports gRPC, Rest and WebSocket Transport protocols with TLS support (both RPC and Stream modes)\n- Supports Access control Authorization and Authentication\n- Supports message masticating and smart routing\n- No Message broker configuration needed (i.e., queues, exchanges)\n- .Net, Java, Python, Go, and NodeJS SDKs\n\n### KubeMQ Targets Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Single Interface - One interface all the services\n- Any Service - Support all major services types (databases, cache, messaging, serverless, HTTP, etc.)\n- Plug-in Architecture Easy to extend, easy to connect\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-targets)\n\n### KubeMQ Bridges Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Build Any Topology - connects KubeMQ clusters in 1:1, 1:n , n:1, n:n\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-bridges)\n\n### KubeMQ Sources Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Single Interface - One interface all the services\n- Any Service - Support all major messaging services such as Kafka, ActiveMQ, SQS, and more.\n- Plug-in Architecture Easy to extend, easy to connect\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-sources)\n\n## Getting Started\n\n[Start with OpenShift](https://docs.kubemq.io/getting-started/create-cluster/openshift)\n\n## Get Enterprise Trial License\n\n[Register](https://account.kubemq.io/login/register)\n\n## Request a Demo\n\n[See KubeMQ in Action](https://kubemq.io/request-a-demo/)",
+      "csv_display_name": "Kubemq Enterprise Operator",
+      "csv_metadata_description": "Kubernetes Messaging Platform",
+      "csv_name": "kubemq-operator.v1.7.8",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": true,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": false,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:15:14.145000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "kubemq-operator-marketplace",
+      "provided_apis": [
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqDashboard",
+          "plural": "kubemqdashboards",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqCluster",
+          "plural": "kubemqclusters",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqCluster",
+          "plural": "kubemqclusters",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqConnector",
+          "plural": "kubemqconnectors",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqConnector",
+          "plural": "kubemqconnectors",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqDashboard",
+          "plural": "kubemqdashboards",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Kubemq.io",
+      "related_images": [],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.7.8",
+      "version_original": "1.7.8"
+    },
+    {
+      "_id": "61a57cfec17162a20c1c6890",
+      "alm_examples": [
+        {
+          "api_version": "game.marketplace.redhat.com/v1",
+          "kind": "Arcade",
+          "metadata": {
+            "name": "arcade-sample"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/rhm-labs/arcade-operator-bundle@sha256:f5f025c7f56643fab9148bb5de8ee34a84d02b78a6abb4b5592306cf54296654",
+      "bundle_path_digest": "sha256:f5f025c7f56643fab9148bb5de8ee34a84d02b78a6abb4b5592306cf54296654",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:23:10.074000+00:00",
+      "csv_description": "RHM Arcade Operator - a simple operator used to showcase how to build an operator around an existing web application that can can run on Openshift, Vanilla k8s, or on-boarded to Red Hat Marketplace.",
+      "csv_display_name": "Arcade Operator",
+      "csv_metadata_description": "",
+      "csv_name": "marketplace-games-operator.v1.0.0",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": false,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": false,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:18:47.224000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "marketplace-games-operator",
+      "provided_apis": [
+        {
+          "group": "game.marketplace.redhat.com",
+          "kind": "Arcade",
+          "plural": "arcades",
+          "version": "v1"
+        }
+      ],
+      "provider": "Red Hat Marketplace",
+      "related_images": [
+        {
+          "digest": "sha256:e10d1d982dd653db74ca87a1d1ad017bc5ef1aeb651bdea089debf16485b080b",
+          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:e10d1d982dd653db74ca87a1d1ad017bc5ef1aeb651bdea089debf16485b080b",
+          "name": "kube-rbac-proxy"
+        },
+        {
+          "digest": "sha256:d6959be6693728d2dc4cd38b69251551d23c5002cb52db2684df31a0a8f7b0ab",
+          "image": "registry.connect.redhat.com/rhm-labs/arcade-operator@sha256:d6959be6693728d2dc4cd38b69251551d23c5002cb52db2684df31a0a8f7b0ab",
+          "name": "manager"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.0.0",
+      "version_original": "1.0.0"
+    },
+    {
+      "_id": "61a57d08c17162a20c1c6891",
+      "alm_examples": [
+        {
+          "api_version": "cache.omarg.net/v1alpha1",
+          "kind": "Memcached",
+          "metadata": {
+            "name": "memcached-sample"
+          },
+          "spec": {
+            "foo": "bar"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/ogaye/ogaye@sha256:f35a21fb3936b259aabe27b453612616fca4e6327c9042361b4d00ef332905c0",
+      "bundle_path_digest": "sha256:f35a21fb3936b259aabe27b453612616fca4e6327c9042361b4d00ef332905c0",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:23:20.029000+00:00",
+      "csv_description": "Omar memcached operator",
+      "csv_display_name": "memcached-operator-ogaye",
+      "csv_metadata_description": "",
+      "csv_name": "memcached-operator.v0.0.1",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": false,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": false,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-10-24T11:19:00.209000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "memcached-operator-ogaye",
+      "provided_apis": [
+        {
+          "group": "cache.omarg.net",
+          "kind": "Memcached",
+          "plural": "memcacheds",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Omar Gaye IBM",
+      "related_images": [
+        {
+          "digest": "sha256:9211b70edbb93d718428e1c9a992e5fc74a20cb213f8a0592ffe340c362890fe",
+          "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:9211b70edbb93d718428e1c9a992e5fc74a20cb213f8a0592ffe340c362890fe",
+          "name": "kube-rbac-proxy"
+        },
+        {
+          "digest": "sha256:5340ac11ce676dd3204bf3807a4c2333a8dddcbcec918db0aeafbc977163c1c6",
+          "image": "quay.io/ogaye/memcached-operator@sha256:5340ac11ce676dd3204bf3807a4c2333a8dddcbcec918db0aeafbc977163c1c6",
+          "name": "manager"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.1",
+      "version_original": "0.0.1"
     }
   ]
 }

@@ -1376,6 +1376,74 @@ entries:
     urls:
     - https://github.com/IBM/charts/blob/master/repo/ibm-helm/ibm-object-storage-plugin-2.1.21.tgz?raw=true
     version: 2.1.21
+  - annotations:
+      charts.openshift.io/digest: sha256:5b92b1c2b748ed82d6e8666dfb9367bafacecc80c2878837b9c1ff2a1eab8a46
+      charts.openshift.io/lastCertifiedTimestamp: '2022-11-17T15:40:33.873301+00:00'
+      charts.openshift.io/name: ibm-object-storage-plugin Chart
+      charts.openshift.io/providerType: partner
+      charts.openshift.io/submissionTimestamp: '2022-11-17T15:44:24.531787+00:00'
+      charts.openshift.io/supportedOpenShiftVersions: '>=4.6'
+      charts.openshift.io/testedOpenShiftVersion: '4.10'
+    apiVersion: v2
+    appVersion: 2.2.1
+    description: 'Chart for deploying ibmcloud object storage plugin. IBM Cloud Object
+      Storage is persistent, highly available storage that you can mount to apps that
+      run in a Kubernetes cluster by using the IBM Cloud Object Storage plug-in. The
+      plug-in is a Kubernetes Flex-Volume plug-in that connects Cloud Object Storage
+      buckets to pods in your cluster.  License By installing this product you accept
+      the following license terms: http://www.apache.org/licenses/ and https://www.redhat.com/licenses/EULA_Red_Hat_Universal_Base_Image_English_20190422.pdf'
+    digest: 5f6e3677a073a3c9b7a2ad2ba9fc80ef54d25fcfd6b0122d901f32037cc7d2a9
+    icon: https://cache.globalcatalog.cloud.ibm.com/static/cache/2461-acb0d10a1725d783/images/uploaded/icons/object-storage.png
+    keywords:
+    - IKS
+    - amd64
+    - Storage
+    - Commercial
+    - Limited
+    - Other
+    - ROKS
+    kubeVersion: '>=1.19.0'
+    maintainers:
+    - email: contsto2@in.ibm.com
+      name: IBM
+    name: ibm-object-storage-plugin
+    urls:
+    - https://github.com/IBM/charts/blob/master/repo/ibm-helm/ibm-object-storage-plugin-2.2.1.tgz?raw=true
+    version: 2.2.1
+  - annotations:
+      charts.openshift.io/digest: sha256:128ff67b912dba937cc0047272fe4278411c6b152ce52275ad8ffbeb0271dcb4
+      charts.openshift.io/lastCertifiedTimestamp: '2022-11-17T15:43:51.608213+00:00'
+      charts.openshift.io/name: ibm-object-storage-plugin Chart
+      charts.openshift.io/providerType: partner
+      charts.openshift.io/submissionTimestamp: '2022-11-17T15:47:33.974647+00:00'
+      charts.openshift.io/supportedOpenShiftVersions: '>=4.6'
+      charts.openshift.io/testedOpenShiftVersion: '4.10'
+    apiVersion: v2
+    appVersion: 2.2.0
+    description: 'Chart for deploying ibmcloud object storage plugin. IBM Cloud Object
+      Storage is persistent, highly available storage that you can mount to apps that
+      run in a Kubernetes cluster by using the IBM Cloud Object Storage plug-in. The
+      plug-in is a Kubernetes Flex-Volume plug-in that connects Cloud Object Storage
+      buckets to pods in your cluster.  License By installing this product you accept
+      the following license terms: http://www.apache.org/licenses/ and https://www.redhat.com/licenses/EULA_Red_Hat_Universal_Base_Image_English_20190422.pdf'
+    digest: f955ffb433dffdb292948d0566801f4c19a5c814778407d053bc23cfa1ea03e4
+    icon: https://cache.globalcatalog.cloud.ibm.com/static/cache/2461-acb0d10a1725d783/images/uploaded/icons/object-storage.png
+    keywords:
+    - IKS
+    - amd64
+    - Storage
+    - Commercial
+    - Limited
+    - Other
+    - ROKS
+    kubeVersion: '>=1.19.0'
+    maintainers:
+    - email: contsto2@in.ibm.com
+      name: IBM
+    name: ibm-object-storage-plugin
+    urls:
+    - https://github.com/IBM/charts/blob/master/repo/ibm-helm/ibm-object-storage-plugin-2.2.0.tgz?raw=true
+    version: 2.2.0
   ibm-ibm-oms-ent-prod:
   - annotations:
       charts.openshift.io/certifiedOpenShiftVersions: 4.7.0
@@ -2099,6 +2167,45 @@ entries:
     urls:
     - https://github.com/openshift-helm-charts/charts/releases/download/redhat-cryostat-0.1.3/redhat-cryostat-0.1.3.tgz
     version: 0.1.3
+  - annotations:
+      charts.openshift.io/digest: sha256:b8c1f295438bf7035d0e1acac17df641347e7ce139d7b84b16c54c3db5e239a6
+      charts.openshift.io/lastCertifiedTimestamp: '2022-11-16T20:21:15.243939+00:00'
+      charts.openshift.io/provider: Red Hat
+      charts.openshift.io/providerType: community
+      charts.openshift.io/submissionTimestamp: '2022-11-16T20:21:44.528669+00:00'
+      charts.openshift.io/supportedOpenShiftVersions: '>=4.6'
+      charts.openshift.io/testedOpenShiftVersion: '4.11'
+    apiVersion: v2
+    appVersion: 2.2.0.redhat
+    description: Securely manage JFR recordings for your containerized Java workloads
+    digest: a7829f5afc3ad6e5396e1a1e02f37e190a80d007ef67f6675f60d565997c1230
+    home: https://cryostat.io
+    icon: https://raw.githubusercontent.com/cryostatio/cryostat-helm/main/docs/images/cryostat-icon.svg
+    keywords:
+    - flightrecorder
+    - java
+    - jdk
+    - jfr
+    - jmc
+    - missioncontrol
+    - monitoring
+    - profiling
+    - diagnostic
+    kubeVersion: '>= 1.19.0'
+    maintainers:
+    - name: The Cryostat Community
+      url: https://groups.google.com/g/cryostat-development
+    name: cryostat
+    sources:
+    - https://github.com/cryostatio/cryostat
+    - https://github.com/cryostatio/cryostat-core
+    - https://github.com/cryostatio/cryostat-web
+    - https://github.com/cryostatio/jfr-datasource
+    - https://github.com/cryostatio/cryostat-grafana-dashboard
+    type: application
+    urls:
+    - https://github.com/openshift-helm-charts/charts/releases/download/redhat-cryostat-0.2.0/redhat-cryostat-0.2.0.tgz
+    version: 0.2.0
   redhat-data-grid:
   - annotations:
       charts.openshift.io/digest: sha256:4a60f63bec9744cc6b6261ae1b81670a96c3e9d95c1bb259894b4b2220a42549
@@ -3495,4 +3602,4 @@ entries:
     urls:
     - https://github.com/openshift-helm-charts/charts/releases/download/wavefronthq-wavefront-1.12.0/wavefronthq-wavefront-1.12.0.tgz
     version: 1.12.0
-generated: '2022-09-23T12:57:32.941284+00:00'
+generated: '2022-11-17T15:47:33.974647+00:00'
