@@ -1,7 +1,6 @@
 module github.com/test-network-function/cnf-certification-test
 
 go 1.22.4
-
 require (
 	github.com/Masterminds/semver/v3 v3.2.1
 	github.com/sirupsen/logrus v1.9.3
@@ -12,7 +11,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-require k8s.io/client-go v0.30.2
+require k8s.io/client-go v0.30.3
 
 require (
 	github.com/kelseyhightower/envconfig v1.4.0
@@ -23,8 +22,8 @@ require (
 	github.com/operator-framework/operator-lifecycle-manager v0.20.0
 	github.com/pkg/errors v0.9.1 // indirect
 	helm.sh/helm/v3 v3.15.2
-	k8s.io/api v0.30.2
-	k8s.io/apimachinery v0.30.2
+	k8s.io/api v0.30.3
+	k8s.io/apimachinery v0.30.3
 	k8s.io/klog/v2 v2.120.1 // indirect
 )
 
@@ -217,7 +216,7 @@ require (
 	github.com/redhat-openshift-ecosystem/openshift-preflight v0.0.0-20240605154909-3bdeab0e72f3
 	github.com/robert-nix/ansihtml v1.0.1
 	github.com/test-network-function/oct v0.0.12
-	github.com/test-network-function/privileged-daemonset v1.0.26
+	github.com/test-network-function/privileged-daemonset v1.0.29
 	golang.org/x/term v0.21.0
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/kubectl v0.30.2
